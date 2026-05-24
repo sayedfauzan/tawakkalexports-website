@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawakkal Exports | Official Catalogue</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: #333; background-color: #ffffff; }
+        .header { padding: 40px 20px; text-align: center; border-bottom: 2px solid #0a2540; }
+        .logo { max-width: 250px; }
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 15px; text-align: center; border-radius: 5px; }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+        .footer { background: #0a2540; color: #ffffff; padding: 40px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.jpg" alt="Tawakkal Exports Logo" class="logo">
+</div>
+
+<div class="container">
+    <h1>Our Product Portfolio</h1>
+    [span_0](start_span)[span_1](start_span)[span_2](start_span)<p>Global Trade with Trust & Excellence[span_0](end_span)[span_1](end_span)[span_2](end_span).</p>
+    
+    <div class="grid">
+        <div class="card"><img src="product1.jpg" alt="Product"><h3>Basmati Rice</h3></div>
+        <div class="card"><img src="product2.jpg" alt="Product"><h3>Non-Basmati Rice</h3></div>
+        <div class="card"><img src="product3.jpg" alt="Product"><h3>Premium Wheat</h3></div>
+        <div class="card"><img src="product4.jpg" alt="Product"><h3>Pulses & Lentils</h3></div>
+        <div class="card"><img src="product5.jpg" alt="Product"><h3>Fresh Grapes</h3></div>
+        <div class="card"><img src="product6.jpg" alt="Product"><h3>Export Onions</h3></div>
+        <div class="card"><img src="product7.jpg" alt="Product"><h3>Cashew Nuts</h3></div>
+        <div class="card"><img src="product8.jpg" alt="Product"><h3>Walnuts</h3></div>
+        <div class="card"><img src="product9.jpg" alt="Product"><h3>Kitchen Appliances</h3></div>
+        <div class="card"><img src="product10.jpg" alt="Product"><h3>LED Lighting</h3></div>
+        <div class="card"><img src="product11.jpg" alt="Product"><h3>Premium Cutlery</h3></div>
+        <div class="card"><img src="product12.jpg" alt="Product"><h3>Baby Diapers</h3></div>
+        <div class="card"><img src="product13.jpg" alt="Product"><h3>Hardware Tools</h3></div>
+        <div class="card"><img src="product14.jpg" alt="Product"><h3>Fasteners</h3></div>
+        <div class="card"><img src="product15.jpg" alt="Product"><h3>All-Weather Umbrella</h3></div>
+        <div class="card"><img src="product16.jpg" alt="Product"><h3>High-Yield Fertilizer</h3></div>
+        <div class="card"><img src="product17.jpg" alt="Product"><h3>Soil Conditioners</h3></div>
+        <div class="card"><img src="product18.jpg" alt="Product"><h3>Kitchen Kettles</h3></div>
+        <div class="card"><img src="product19.jpg" alt="Product"><h3>Commercial Blenders</h3></div>
+        <div class="card"><img src="product20.jpg" alt="Product"><h3>Hygiene Wipes</h3></div>
+    </div>
+</div>
+
+<div class="footer">
+    <p><strong>Tawakkal Exports HQ</strong></p>
+    [span_3](start_span)<p>Mahadev Residency, Shop No. 02, Plot No. 65C, Sector 01, Pushpak Node, Karanjade, Panvel[span_3](end_span).</p>
+    <p>Contact: +91 70453 27352 | [span_4](start_span)Email: tawakkalexport@gmail.com[span_4](end_span).</p>
+</div>
+
+</body>
+</html>

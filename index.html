@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="TAWAKKAL EXPORTS - Importer & Exporter of premium agricultural commodities and industrial goods. Basmati rice, spices, pulses, and global sourcing. Based in Panvel, Maharashtra.">
+    <meta name="keywords" content="rice exporter India, basmati rice, agricultural export, spice exporter, pulses supplier, import export company India, Tawakkal Exports, importer exporter Panvel">
+    <meta name="author" content="TAWAKKAL EXPORTS">
+    <meta property="og:title" content="TAWAKKAL EXPORTS | Importer & Exporter | Premium Agri & Global Sourcing">
+    <meta property="og:description" content="Trusted B2B partner for rice, spices, pulses, and industrial imports. Contact us for bulk orders.">
+    <meta property="og:type" content="website">
+    <title>TAWAKKAL EXPORTS | Importer & Exporter</title>
+    <link rel="canonical" href="https://tawakkalexports-website.vercel.app/">
+    <!-- Schema.org markup for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TAWAKKAL EXPORTS",
+      "url": "https://tawakkalexports-website.vercel.app/",
+      "logo": "https://tawakkalexports-website.vercel.app/logo.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-7045327352",
+          "contactType": "customer service",
+          "email": "tawakkalexport@gmail.com",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971-502533528",
+          "contactType": "customer service",
+          "email": "tawakkalexport@gmail.com",
+          "availableLanguage": ["English", "Arabic"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mahadev Residency, Shop No. 02, Plot No. 65C, Sector 01, Pushpak Node, Karanjade Panvel",
+        "addressLocality": "Panvel",
+        "addressRegion": "Maharashtra",
+        "postalCode": "410206",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #fefefe;
+            color: #1e2a3e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Sticky CTA Button */
+        .sticky-quote {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #2c7a4d;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: inherit;
+        }
+        .sticky-quote:hover {
+            background: #1f5e3a;
+            transform: scale(1.02);
+        }
+
+        /* Header & Logo */
+        .header {
+            background: white;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            padding: 16px 0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            background: #e9f5ec;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f5e3a;
+        }
+        .logo-text p {
+            font-size: 0.8rem;
+            color: #4b5563;
+            font-weight: 500;
+        }
+        .nav-links a {
+            margin-left: 24px;
+            text-decoration: none;
+            color: #2d3e50;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #2c7a4d; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #eaf7e6 0%, #d4e9d3 100%);
+            padding: 60px 0;
+            border-radius: 0 0 32px 32px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #1e4620;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 16px 0 24px;
+        }
+        .btn {
+            display: inline-block;
+            background: #2c7a4d;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #2c7a4d;
+            color: #2c7a4d;
+        }
+        .btn-outline:hover {
+            background: #2c7a4d;
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 32px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #2c7a4d;
+            margin-top: 8px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 24px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            background: #f0f0f0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background: #f1f9f0;
+            font-weight: 600;
+        }
+        .badge {
+            background: #e6f7e6;
+            color: #1f5e3a;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .contact-form {
+            background: #f9fafb;
+            padding: 32px;
+            border-radius: 28px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            font-family: inherit;
+        }
+        button[type="submit"] {
+            background: #2c7a4d;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .trust-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 32px 0;
+        }
+        .trust-icons span {
+            background: #f0fdf4;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: 500;
+        }
+        footer {
+            background: #1e2a3e;
+            color: #cbd5e1;
+            padding: 40px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .header-inner { flex-direction: column; text-align: center; }
+            .nav-links a { margin: 0 12px; display: inline-block; margin-top: 8px; }
+            .hero h2 { font-size: 1.8rem; }
+            .sticky-quote { padding: 10px 20px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sticky CTA -->
+<button class="sticky-quote" id="stickyQuoteBtn">📄 Request a Quote →</button>
+
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-img">🌐</div>
+            <div class="logo-text">
+                <h1>TAWAKKAL EXPORTS</h1>
+                <p>IMPORTER & EXPORTER</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#export">Exports</a>
+            <a href="#import">Imports</a>
+            <a href="#whyus">Why Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Premium Agri Commodities<br> & Global Sourcing</h2>
+            <p>Trusted B2B partner for Basmati rice, spices, pulses, and industrial imports. Strategically located near JNPT & Mumbai port for seamless logistics.</p>
+            <a href="#contact" class="btn">Request a Quote</a>
+            <a href="#export" class="btn btn-outline" style="margin-left: 16px;">View Products</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="whyus">
+        <div class="container">
+            <h3 class="section-title">Why Choose Tawakkal Exports?</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <div style="font-size: 2.5rem;">📦</div>
+                    <h3>10+ Years of Excellence</h3>
+                    <p>Decades of collective experience in international trade, serving clients across GCC, Europe, and Southeast Asia.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem;">🚢</div>
+                    <h3>Logistics Advantage</h3>
+                    <p>Panvel base gives direct access to JNPT, Nhava Sheva & Mumbai ports – faster shipping & lower freight costs.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem;">✅</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Strict quality checks, moisture control, and customized packaging as per buyer requirements.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 2.5rem;">🌍</div>
+                    <h3>Global Reach</h3>
+                    <p>Successfully exported to UAE, Saudi, Oman, Malaysia, and more. Imports from USA, China, Europe.</p>
+                </div>
+            </div>
+            <div class="trust-icons">
+                <span>✔️ APEDA Registered</span>
+                <span>✔️ FSSAI Certified</span>
+                <span>✔️ ISO 22000:2018</span>
+                <span>✔️ Spices Board India</span>
+                <span>✔️ IE Code Holder</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Export Division -->
+    <section id="export">
+        <div class="container">
+            <h3 class="section-title">🌾 Export Division – Premium Agri Commodities</h3>
+            <p>We supply high-quality Indian agricultural products with customizable packaging and competitive pricing.</p>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/eef2ee/2c5e3a?text=Basmati+Rice" alt="Basmati Rice">
+                    <h3>Premium Basmati Rice</h3>
+                    <p>1121, Pusa, Sugandha, Traditional varieties. Aged 1-2 years, double polished, 100% sortex.</p>
+                    <span class="badge">Moisture ≤12.5%</span>
+                    <span class="badge">Pack: 1kg to 50kg</span>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/eef2ee/2c5e3a?text=Spices" alt="Indian Spices">
+                    <h3>Whole & Ground Spices</h3>
+                    <p>Red chili, turmeric, coriander, cumin, fennel, mustard seeds – fresh crop, high aroma.</p>
+                    <span class="badge">Non-irradiated</span>
+                    <span class="badge">Custom blends</span>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/eef2ee/2c5e3a?text=Pulses" alt="Pulses">
+                    <h3>Pulses & Lentils</h3>
+                    <p>Toor dal, Masoor dal, Chickpeas, Green Mung – premium grade, phytosanitary certified.</p>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/eef2ee/2c5e3a?text=Non-Basmati" alt="Non Basmati Rice">
+                    <h3>Non-Basmati Rice</h3>
+                    <p>IR64, Sona Masoori, Ponni, PR11 – ideal for institutional and bulk buyers.</p>
+                </div>
+            </div>
+
+            <h4 style="margin: 40px 0 16px;">📦 Product Specifications (Basmati Rice)</h4>
+            <table>
+                <thead>
+                    <tr><th>Variety</th><th>Grain Length (mm)</th><th>Moisture</th><th>Broken (%)</th><th>Packing</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1121 Basmati</td><td>8.30+</td><td>≤12%</td><td>1% max</td><td>Non-woven / PP bags</td></tr>
+                    <tr><td>Pusa Basmati</td><td>7.50+</td><td>≤12%</td><td>1% max</td><td>25kg/50kg jute</td></tr>
+                    <tr><td>Sugandha</td><td>7.00+</td><td>≤12.5%</td><td>2% max</td><td>As per buyer</td></tr>
+                </tbody>
+            </table>
+            <a href="#" id="downloadCatalogBtn" class="btn" style="margin-top: 30px; background:#3b6e4a;">📥 Download Product Catalog (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Import Division -->
+    <section id="import">
+        <div class="container">
+            <h3 class="section-title">📦 Import Division – Industrial & Consumer Goods</h3>
+            <p>We source high-quality raw materials, machinery, and finished products for Indian manufacturers and traders.</p>
+            <div class="grid-2">
+                <div class="card"><h3>⚙️ Industrial Raw Materials</h3><p>PP/HDPE granules, petrochemicals, lubricants, chemicals, metals (copper, aluminium).</p></div>
+                <div class="card"><h3>🍎 Food & Agro Imports</h3><p>Dried fruits, dates, edible oils, pulses (import origin like Canadian lentils).</p></div>
+                <div class="card"><h3>📱 Electronics & Machinery</h3><p>Industrial automation, solar equipment, consumer electronics (B2B).</p></div>
+                <div class="card"><h3>📦 Consumer Goods</h3><p>Toiletries, hardware, stationery, and general merchandise.</p></div>
+            </div>
+            <p style="margin-top: 20px; background:#eef2ff; padding: 16px; border-radius: 20px;"><strong>💡 Want to import something specific?</strong> Get in touch – we’ll source globally at competitive rates.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background: #fef9e3;">
+        <div class="container">
+            <h3 class="section-title">⭐ What Our Clients Say</h3>
+            <div class="grid-2">
+                <div class="card">“Reliable partner for Basmati rice. On-time delivery and consistent quality. Highly recommend.” – <strong>Al Maya Group, UAE</strong></div>
+                <div class="card">“Great sourcing capabilities for industrial chemicals. Professional team and smooth logistics.” – <strong>K.K. Industries, Mumbai</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with corrected details -->
+    <section id="contact">
+        <div class="container">
+            <h3 class="section-title">📞 Get In Touch</h3>
+            <div class="grid-2">
+                <div>
+                    <p><strong>📍 Corporate Office</strong><br>
+                    Mahadev Residency, Shop No. 02, Plot No. 65C,<br>
+                    Sector 01, Pushpak Node, Karanjade Panvel,<br>
+                    Dist. Raigad - 410 206, Maharashtra, India</p>
+                    <p>
+                        <strong>📞 Phone (India):</strong><br>
+                        <a href="tel:+917045327352">+91 70453 27352</a><br>
+                        <a href="tel:+919324581232">+91 93245 81232</a><br>
+                        <strong>📞 Phone (UAE):</strong><br>
+                        <a href="tel:+971502533528">+971 50 253 3528</a>
+                    </p>
+                    <p><strong>✉️ Email:</strong><br>
+                    <a href="mailto:tawakkalexport@gmail.com">tawakkalexport@gmail.com</a></p>
+                    <p><strong>⏰ Business Hours:</strong> Mon-Sat, 9:30 AM – 7:00 PM IST</p>
+                    <div class="trust-icons" style="justify-content: flex-start; margin-top: 20px;">
+                        <span>⭐ Member: FIEO</span>
+                        <span>📦 IEC: Available on request</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h4>Request a Quote</h4>
+                    <form id="quoteForm" action="#" method="post">
+                        <input type="text" placeholder="Full Name *" required>
+                        <input type="email" placeholder="Email Address *" required>
+                        <input type="tel" placeholder="Phone with country code">
+                        <select required>
+                            <option value="">Select Product / Service</option>
+                            <option>Basmati Rice</option>
+                            <option>Non-Basmati Rice</option>
+                            <option>Spices</option>
+                            <option>Pulses</option>
+                            <option>Import Sourcing</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea rows="3" placeholder="Tell us quantity, destination port, packaging preference..."></textarea>
+                        <button type="submit">Send Inquiry →</button>
+                    </form>
+                    <p id="formFeedback" style="margin-top: 12px; font-size:0.9rem;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 TAWAKKAL EXPORTS – Importer & Exporter | All rights reserved</p>
+        <p style="margin-top: 12px;">📍 Panvel, Maharashtra, India | <a href="#home" style="color:#a0c4a8;">Back to top</a></p>
+    </div>
+</footer>
+
+<script>
+    // Sticky quote button scroll to contact
+    document.getElementById('stickyQuoteBtn').addEventListener('click', () => {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Download catalog simulation
+    document.getElementById('downloadCatalogBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Product catalog PDF will be available soon. For immediate prod
